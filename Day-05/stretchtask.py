@@ -1,6 +1,11 @@
-fruit={"apple":5,"banana":3}
-print(f"Original dictionary:{fruit}")
-fruit["orange"]=8
-print(f"After adding orange:{fruit}")
-fruit["apple"]=10
-print(f"After updating apple:{fruit}")
+org=[1,2,3,4,5]
+print(f"Original List:{org}")
+org.reverse()
+print(f"Reversed List:{org}")
+
+#alternative
+
+org=[1,2,3,4,5]
+rev=org[::-1]
+print(f"Original List:{org}")
+print(f"Reversed List:{rev}")
