@@ -1,0 +1,31 @@
+def count(sent):
+    vowels=['a','e','i','o','u']
+    vowel_count={}
+    for i in sent:
+        if i in vowels:
+            if i in vowel_count:
+                vowel_count[i]+=1
+            else:
+                vowel_count[i]=1
+    return vowel_count
+
+def high(sent):
+    count={}
+    for i in sent:
+        if i in count:
+            count[i]+=1
+        else:
+            count[i]=1
+    
+    highest=1
+    char=""
+    for i,j in count.items():
+        if j>highest:
+            highest=j
+            char=i
+    return(f"The most occuring letter is:{char} with count:{highest}")
+
+
+sent=input("Enter a string:")
+print(count(sent))
+print(high(sent))
