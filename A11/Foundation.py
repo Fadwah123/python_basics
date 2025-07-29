@@ -13,11 +13,4 @@ while True:
     elif ch==2:
         roll=random.randint(1,20)
         print("🎲You rolled:",roll)
-    elif ch==3:
-        num=int(input("How mant dice?"))
-        total=0
-        for i in range(0,num):
-             
-    elif ch==4:
-        break
-        
+  
