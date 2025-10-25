@@ -1,0 +1,10 @@
+class Solution:
+    def convertToTitle(self, columnNumber: int) -> str:
+        n=columnNumber
+        letter=""
+        while n>0:
+            n-=1
+            rem=n%26
+            letter=chr(rem+ord('A'))+letter
+            n=n//26
+        return letter
