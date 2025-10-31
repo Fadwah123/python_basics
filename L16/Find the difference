@@ -1,0 +1,6 @@
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        x=0
+        for i in s+t:
+            x=x^ord(i)
+        return chr(x)
